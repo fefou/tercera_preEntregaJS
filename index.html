@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- LINK AL CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Pre entrega 3</title>
+</head>
+
+<body>
+
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mis Mates</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <form class="d-flex">
+                        <input id="buscador" class="form-control me-2" placeholder="" aria-label="Search">
+                        <button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
+                    </form>
+
+                </ul>
+
+                <ul style="list-style: none;" className="navbar-nav me-auto">
+                    <li className="nav-item ">
+                        <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito"
+                            class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--FORM AGREGAR MATE-->
+    <form id="formAgregarMate" class="col-lg-6 m-5">
+        <div class="mb-3">
+            <label for="tipo" class="form-label">Tipo de mate</label>
+            <input type="text" class="form-control" id="tipoInput" aria-describedby="tipo">
+
+        </div>
+
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio:</label>
+            <input type="number" class="form-control" id="precioInput" aria-describedby="precio">
+
+        </div>
+        <div>
+            <button type="text" id="guardarMateBtn" class="btn btn-success">Guardar Mate</button>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="m-5 col-lg-3">
+            <button id="verCatalogo" class="btn btn-success">Ver Catálogo</button>
+        </div>
+
+        <!--CONTAINER MATES-->
+        <div class="container">
+            <div id="mates" class="row">
+
+            </div>
+        </div>
+
+
+        <!--Script de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+            </script>
+
+
+
+        <script src="pre_entrega03.js"></script>
+</body>
+
+</html>
